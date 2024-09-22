@@ -14,17 +14,17 @@
 <body>
     <main class="bg-[#010313] bg-[url('images/background.png')] bg-no-repeat bg-center min-h-screen bg-contain">
         <!-- alpha-home -->
-        <section class="hidden flex flex-col items-center justify-center min-h-screen">
+        <section id="home-screen" class="flex flex-col items-center justify-center min-h-screen">
             <div class="flex flex-col items-center">
                 <h1 class="text-white anton-font font-normal text-[160px]">ALPHABET CLASH</h1>
                 <p class="text-white poppins-font text-base font-medium">Unleash Your Keyboard Kung Fu : Press “Enter”
                     to Play</p>
-                <button class="btn py-4 px-8 mt-8 bg-white text-black hover:text-white poppins-font font-semibold">Play
+                <button onclick="play()" class="btn py-4 px-8 mt-8 bg-white text-black hover:text-white poppins-font font-semibold">Play
                     Now</button>
             </div>
         </section>
         <!-- alpha-sceond-page -->
-        <section class="hidden">
+        <section id="play-ground" class="hidden">
             <div class="flex flex-col items-center min-h-screen gap-20">
                 <!-- srceen -->
                 <div class="artboard artboard-horizontal phone-6 artbd-border mt-14">
@@ -87,7 +87,7 @@
                  </div>
             </div>
         </section>
-        <section class="flex flex-col items-center justify-center min-h-screen">
+        <section class="hidden flex flex-col items-center justify-center min-h-screen">
             <div class="score w-1/4 text-center py-11">
                 <h2 class="text-white poppins-font text-5xl font-extrabold">Score : <span class="font-medium">14</span></h2>
                 <button class="btn mt-5 mb-3 px-8 border-none bg-white hover:bg-gray-700 hover:text-white poppins-font">Play Now</button>
@@ -96,6 +96,8 @@
         </section>
 
     </main>
+    <script src="script/utility.js"></script>
+    <script src="script/alpha-clash.js"></script>
 </body>
 
 </html>

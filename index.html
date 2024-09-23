@@ -19,7 +19,8 @@
                 <h1 class="text-white anton-font font-normal text-[160px]">ALPHABET CLASH</h1>
                 <p class="text-white poppins-font text-base font-medium">Unleash Your Keyboard Kung Fu : Press “Enter”
                     to Play</p>
-                <button onclick="play()" class="btn py-4 px-8 mt-8 bg-white text-black hover:text-white poppins-font font-semibold">Play
+                <button onclick="play()"
+                    class="btn py-4 px-8 mt-8 bg-white text-black hover:text-white poppins-font font-semibold">Play
                     Now</button>
             </div>
         </section>
@@ -29,68 +30,75 @@
                 <!-- srceen -->
                 <div class="artboard artboard-horizontal phone-6 artbd-border mt-14">
                     <div class="flex justify-center">
-                        <p class="bg-black text-white w-2/6 text-center py-2 rounded-b-lg poppins-font">Don't watch keyboard while
+                        <p class="bg-black text-white w-2/6 text-center py-2 rounded-b-lg poppins-font">Don't watch
+                            keyboard while
                             playing...</p>
                     </div>
                     <div class="flex justify-center items-center h-4/5">
-                        <p class="text-[#010313] poppins-font text-9xl font-semibold text-center uppercase">Y</p>
+                        <p id="current-alphabet"
+                            class="text-[#010313] poppins-font text-9xl font-semibold text-center uppercase">Y</p>
                     </div>
                 </div>
                 <!-- keyboard -->
                 <div class="text-[#010313] inter-font">
                     <div class="my-1 flex w-full justify-center gap-1">
-                        <kbd class="kbd">q</kbd>
-                        <kbd class="kbd">w</kbd>
-                        <kbd class="kbd">e</kbd>
-                        <kbd class="kbd">r</kbd>
-                        <kbd class="kbd">t</kbd>
-                        <kbd class="kbd">y</kbd>
-                        <kbd class="kbd">u</kbd>
-                        <kbd class="kbd">i</kbd>
-                        <kbd class="kbd">o</kbd>
-                        <kbd class="kbd">p</kbd>
+                        <kbd id="q" class="kbd">q</kbd>
+                        <kbd id="w" class="kbd">w</kbd>
+                        <kbd id="e" class="kbd">e</kbd>
+                        <kbd id="r" class="kbd">r</kbd>
+                        <kbd id="t" class="kbd">t</kbd>
+                        <kbd id="y" class="kbd">y</kbd>
+                        <kbd id="u" class="kbd">u</kbd>
+                        <kbd id="i" class="kbd">i</kbd>
+                        <kbd id="o" class="kbd">o</kbd>
+                        <kbd id="p" class="kbd">p</kbd>
                     </div>
                     <div class="my-1 flex w-full justify-center gap-1">
-                        <kbd class="kbd">a</kbd>
-                        <kbd class="kbd">s</kbd>
-                        <kbd class="kbd">d</kbd>
-                        <kbd class="kbd">f</kbd>
-                        <kbd class="kbd">g</kbd>
-                        <kbd class="kbd">h</kbd>
-                        <kbd class="kbd">j</kbd>
-                        <kbd class="kbd">k</kbd>
-                        <kbd class="kbd">l</kbd>
+                        <kbd id="a" class="kbd">a</kbd>
+                        <kbd id="s" class="kbd">s</kbd>
+                        <kbd id="d" class="kbd">d</kbd>
+                        <kbd id="f" class="kbd">f</kbd>
+                        <kbd id="g" class="kbd">g</kbd>
+                        <kbd id="h" class="kbd">h</kbd>
+                        <kbd id="j" class="kbd">j</kbd>
+                        <kbd id="k" class="kbd">k</kbd>
+                        <kbd id="l" class="kbd">l</kbd>
                     </div>
                     <div class="my-1 flex w-full justify-center gap-1">
-                        <kbd class="kbd">z</kbd>
-                        <kbd class="kbd">x</kbd>
-                        <kbd class="kbd">c</kbd>
-                        <kbd class="kbd">v</kbd>
-                        <kbd class="kbd">b</kbd>
-                        <kbd class="kbd">n</kbd>
-                        <kbd class="kbd">m</kbd>
-                        <kbd class="kbd">/</kbd>
+                        <kbd id="z" class="kbd">z</kbd>
+                        <kbd id="x" class="kbd">x</kbd>
+                        <kbd id="c" class="kbd">c</kbd>
+                        <kbd id="v" class="kbd">v</kbd>
+                        <kbd id="b" class="kbd">b</kbd>
+                        <kbd id="n" class="kbd">n</kbd>
+                        <kbd id="m" class="kbd">m</kbd>
+                        <kbd id="/" class="kbd">/</kbd>
                     </div>
                 </div>
                 <!-- life/scroe -->
-                 <div class="flex justify-between w-3/5">
-                    <button class="btn inter-font border-none text-white bg-[#894189] hover:bg-slate-800 hover:text-white rounded-full px-6 py-0">
+                <div class="flex justify-between w-3/5">
+                    <button
+                        class="btn inter-font border-none text-white bg-[#894189] hover:bg-slate-800 hover:text-white rounded-full px-6 py-0">
                         Life
-                     <img src="images/Group 23.svg" alt="">
-                     <span>1</span>
-                      </button>
-                      <button class="btn inter-font border-none text-white bg-[#360490] hover:bg-slate-800 hover:text-white rounded-full px-6 py-0">
+                        <img src="images/Group 23.svg" alt="">
+                        <span id="current-life">1</span>
+                    </button>
+                    <button
+                        class="btn inter-font border-none text-white bg-[#360490] hover:bg-slate-800 hover:text-white rounded-full px-6 py-0">
                         Score
-                     <img src="images/monetization_on.svg" alt="">
-                     <span>1</span>
-                      </button>
-                 </div>
+                        <img src="images/monetization_on.svg" alt="">
+                        <span id="current-score">0</span>
+                    </button>
+                </div>
             </div>
         </section>
         <section class="hidden flex flex-col items-center justify-center min-h-screen">
             <div class="score w-1/4 text-center py-11">
-                <h2 class="text-white poppins-font text-5xl font-extrabold">Score : <span class="font-medium">14</span></h2>
-                <button class="btn mt-5 mb-3 px-8 border-none bg-white hover:bg-gray-700 hover:text-white poppins-font">Play Now</button>
+                <h2 class="text-white poppins-font text-5xl font-extrabold">Score : <span class="font-medium">14</span>
+                </h2>
+                <button
+                    class="btn mt-5 mb-3 px-8 border-none bg-white hover:bg-gray-700 hover:text-white poppins-font">Play
+                    Now</button>
                 <p class="text-white text-lg font-medium">Practice will make you Pro</p>
             </div>
         </section>

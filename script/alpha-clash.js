@@ -19,12 +19,13 @@ function handleKeyboardButtonPress(event){
         const currentScroe = getElementTextValueById('current-score')
         const updatedScore = currentScroe + 1
         setElementTextById('current-score',updatedScore)
-        console.log('heda')
         removeBackgroundColorById(alphabet)
         continueGame()
     }
     else{
-        
+        const currentLife = getElementTextValueById('current-life')
+        const updatedLife = currentLife - 1 
+        setElementTextById('current-life',updatedLife)
     }
 
 

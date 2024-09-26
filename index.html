@@ -8,7 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/style.css">
-    <title>Alpha-clash</title>
+    <link rel="icon" href="images/play.png" type="image/icon type">
+    <title>Alpha-clash-pro</title>
 </head>
 
 <body>
@@ -87,16 +88,17 @@
                         class="btn inter-font border-none text-white bg-[#360490] hover:bg-slate-800 hover:text-white rounded-full px-6 py-0">
                         Score
                         <img src="images/monetization_on.svg" alt="">
-                        <span id="current-score">2</span>
+                        <span id="current-score">0</span>
                     </button>
                 </div>
             </div>
         </section>
-        <section class="hidden flex flex-col items-center justify-center min-h-screen">
+        <!-- score-page -->
+        <section id="score" class="hidden flex flex-col items-center justify-center min-h-screen">
             <div class="score w-1/4 text-center py-11">
-                <h2 class="text-white poppins-font text-5xl font-extrabold">Score : <span class="font-medium">14</span>
+                <h2 class="text-white poppins-font text-5xl font-extrabold">Score : <span id="final-score" class="font-medium">14</span>
                 </h2>
-                <button
+                <button onclick="play()"
                     class="btn mt-5 mb-3 px-8 border-none bg-white hover:bg-gray-700 hover:text-white poppins-font">Play
                     Now</button>
                 <p class="text-white text-lg font-medium">Practice will make you Pro</p>
